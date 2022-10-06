@@ -1,0 +1,8 @@
+steps:
+- name: 'docker'
+  args: [ 'build', '-t', 'us-east1-docker.pkg.dev/divine-outlet-362409/myregistry/data-infra/airflow', '-f', 'docker/p.Dockerfile', '.' ]
+
+images:
+- 'us-east1-docker.pkg.dev/divine-outlet-362409/myregistry/data-infra/airflow'
+
+tags: ['latest']
